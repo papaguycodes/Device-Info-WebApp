@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Info App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="theme-style">
+    <script defer src="js/device-info.js"></script>
+    <script defer src="js/theme-switcher.js"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Device Information</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <main>
+        <section id="device-info">
+            <h2>Device Details</h2>
+            <ul id="device-details-list">
+                <li><img src="images/icons/user-agent.svg" alt="User Agent Icon"> <strong>User Agent:</strong> <span id="user-agent"></span></li>
+                <li><img src="images/icons/platform.svg" alt="Platform Icon"> <strong>Platform:</strong> <span id="platform"></span></li>
+                <li><img src="images/icons/language.svg" alt="Language Icon"> <strong>Language:</strong> <span id="language"></span></li>
+                <li><img src="images/icons/resolution.svg" alt="Screen Resolution Icon"> <strong>Screen Resolution:</strong> <span id="screen-resolution"></span></li>
+                <li><img src="images/icons/timezone.svg" alt="Time Zone Icon"> <strong>Time Zone:</strong> <span id="time-zone"></span></li>
+                <li><img src="images/icons/ip-address.svg" alt="IP Address Icon"> <strong>IP Address:</strong> <span id="ip-address"></span></li>
+                <li><img src="images/icons/latitude.svg" alt="Latitude Icon"> <strong>Latitude:</strong> <span id="latitude"></span></li>
+                <li><img src="images/icons/longitude.svg" alt="Longitude Icon"> <strong>Longitude:</strong> <span id="longitude"></span></li>
+                <li><img src="images/icons/connection.svg" alt="Connection Type Icon"> <strong>Connection Type:</strong> <span id="connection-type"></span></li>
+                <li><img src="images/icons/browser.svg" alt="Browser Name Icon"> <strong>Browser Name:</strong> <span id="browser-name"></span></li>
+                <li><img src="images/icons/browser-version.svg" alt="Browser Version Icon"> <strong>Browser Version:</strong> <span id="browser-version"></span></li>
+                <li><img src="images/icons/device-memory.svg" alt="Device Memory Icon"> <strong>Device Memory:</strong> <span id="device-memory"></span></li>
+                <li><img src="images/icons/cpu-cores.svg" alt="CPU Cores Icon"> <strong>CPU Cores:</strong> <span id="cpu-cores"></span></li>
+                <li><img src="images/icons/hardware-concurrency.svg" alt="Hardware Concurrency Icon"> <strong>Hardware Concurrency:</strong> <span id="hardware-concurrency"></span></li>
+                <li><img src="images/icons/online-status.svg" alt="Online Status Icon"> <strong>Online Status:</strong> <span id="online-status"></span></li>
+                <li><img src="images/icons/connection-speed.svg" alt="Connection Speed Icon"> <strong>Connection Speed:</strong> <span id="connection-speed"></span></li>
+                <li><img src="images/icons/touch-capable.svg" alt="Touch Capable Icon"> <strong>Touch Capable:</strong> <span id="touch-capable"></span></li>
+                <li><img src="images/icons/screen-orientation.svg" alt="Screen Orientation Icon"> <strong>Screen Orientation:</strong> <span id="screen-orientation"></span></li>
+                <li><img src="images/icons/color-depth.svg" alt="Color Depth Icon"> <strong>Color Depth:</strong> <span id="color-depth"></span></li>
+                <li><img src="images/icons/device-pixel-ratio.svg" alt="Device Pixel Ratio Icon"> <strong>Device Pixel Ratio:</strong> <span id="device-pixel-ratio"></span></li>
+                <li><img src="images/icons/device-name.svg" alt="Device Name Icon"> <strong>Device Name:</strong> <span id="device-name"></span></li>
+                <li><img src="images/icons/operating-system.svg" alt="Operating System Icon"> <strong>Operating System:</strong> <span id="operating-system"></span></li>
+                <li><img src="images/icons/os-version.svg" alt="OS Version Icon"> <strong>OS Version:</strong> <span id="os-version"></span></li>
+                <li><img src="images/icons/battery-level.svg" alt="Battery Level Icon"> <strong>Battery Level:</strong> <span id="battery-level"></span></li>
+                <li><img src="images/icons/network-information.svg" alt="Network Information Icon"> <strong>Network Information:</strong> <span id="network-information"></span></li>
+                <li><img src="images/icons/geolocation-support.svg" alt="Geolocation Support Icon"> <strong>Geolocation Support:</strong> <span id="geolocation-support"></span></li>
+                <li><img src="images/icons/js-enabled.svg" alt="JavaScript Enabled Icon"> <strong>JavaScript Enabled:</strong> <span id="js-enabled"></span></li>
+                <li><img src="images/icons/cookies-enabled.svg" alt="Cookies Enabled Icon"> <strong>Cookies Enabled:</strong> <span id="cookies-enabled"></span></li>
+                <li><img src="images/icons/webgl-support.svg" alt="WebGL Support Icon"> <strong>WebGL Support:</strong> <span id="webgl-support"></span></li>
+                <li><img src="images/icons/local-storage-support.svg" alt="Local Storage Support Icon"> <strong>Local Storage Support:</strong> <span id="local-storage-support"></span></li>
+                <li><img src="images/icons/session-storage-support.svg" alt="Session Storage Support Icon"> <strong>Session Storage Support:</strong> <span id="session-storage-support"></span></li>
+                <li><img src="images/icons/indexeddb-support.svg" alt="IndexedDB Support Icon"> <strong>IndexedDB Support:</strong> <span id="indexeddb-support"></span></li>
+                <li><img src="images/icons/service-worker-support.svg" alt="Service Worker Support Icon"> <strong>Service Worker Support:</strong> <span id="service-worker-support"></span></li>
+                <li><img src="images/icons/media-queries.svg" alt="Media Queries Icon"> <strong>Media Queries:</strong> <span id="media-queries"></span></li>
+                <li><img src="images/icons/orientation-lock.svg" alt="Orientation Lock Icon"> <strong>Orientation Lock:</strong> <span id="orientation-lock"></span></li>
+                <li><img src="images/icons/pixel-ratio.svg" alt="Pixel Ratio Icon"> <strong>Pixel Ratio:</strong> <span id="pixel-ratio"></span></li>
+                <li><img src="images/icons/screen-size.svg" alt="Screen Size Icon"> <strong>Screen Size:</strong> <span id="screen-size"></span></li>
+                <li><img src="images/icons/last-updated.svg" alt="Last Updated Icon"> <strong>Last Updated:</strong> <span id="last-updated"></span></li>
+                <li><img src="images/icons/network-type.svg" alt="Network Type Icon"> <strong>Network Type:</strong> <span id="network-type"></span></li>
+                <li><img src="images/icons/device-type.svg" alt="Device Type Icon"> <strong>Device Type:</strong> <span id="device-type"></span></li>
+                <li><img src="images/icons/app-name.svg" alt="App Name Icon"> <strong>App Name:</strong> <span id="app-name"></span></li>
+                <li><img src="images/icons/app-version.svg" alt="App Version Icon"> <strong>App Version:</strong> <span id="app-version"></span></li>
+            </ul>
+        </section>
+        <section id="github">
+            <p>Check out more at <a href="https://github.com/PaPaGuyCodes" target="_blank">PaPaGuyCodes</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Device Info App</p>
+    </footer>
+</body>
+</html>
