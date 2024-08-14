@@ -45,9 +45,53 @@ The Device Info App is designed to provide users with detailed information about
 - **Device Type**: The type of device (e.g., mobile, tablet, desktop).
 - **App Name and Version**: The name and version of the app.
 
-## APIs Used
-- **IP Address**: [ipify API](https://www.ipify.org)
-- **Geolocation**: [ipapi API](https://ipapi.co)
+# Special Thanks
+
+This project relies on various open-source libraries, tools, and APIs, which greatly contributed to its development. We want to extend our heartfelt gratitude to the open-source communities and contributors behind these resources.
+
+## Libraries and Tools
+
+### 1. **ipify**
+- **Description**: A simple public IP address API service.
+- **Website**: [ipify.org](https://www.ipify.org)
+- **Usage**: Used to fetch the user's public IP address.
+- **License**: [Apache 2.0](https://github.com/ipify/ipify)
+
+### 2. **ipapi**
+- **Description**: Provides IP address and geolocation information.
+- **Website**: [ipapi.co](https://ipapi.co)
+- **Usage**: Used to obtain geolocation data (latitude and longitude).
+- **License**: [Commercial and Free Plans](https://ipapi.co/pricing/)
+
+### 3. **Font Awesome**
+- **Description**: A toolkit for icons and social logos.
+- **Website**: [fontawesome.com](https://fontawesome.com)
+- **Usage**: Icons for the app's UI.
+- **License**: [CC BY 4.0](https://fontawesome.com/license/free)
+
+### 4. **Google Fonts**
+- **Description**: Provides free, open-source fonts.
+- **Website**: [fonts.google.com](https://fonts.google.com)
+- **Usage**: Custom fonts for improved typography.
+- **License**: [Open Font License](https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web)
+
+### 5. **Animate.css**
+- **Description**: A library of cross-browser CSS animation classes.
+- **Website**: [animate.style](https://animate.style)
+- **Usage**: For advanced animations in the app.
+- **License**: [MIT License](https://github.com/animate-css/animate.css/blob/master/LICENSE)
+
+### 6. **Normalize.css**
+- **Description**: A modern alternative to CSS resets.
+- **Website**: [necolas.github.io/normalize.css](https://necolas.github.io/normalize.css/)
+- **Usage**: Ensures consistent styling across browsers.
+- **License**: [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+
+## Acknowledgments
+
+- **Open-Source Community**: Special thanks to the global open-source community for their contributions and support. The collective efforts of developers, designers, and maintainers make projects like this possible.
+
+Thank you all for your dedication to improving software and making it accessible to everyone.
 
 ## Error Handling
 - The app includes error handling for fetching IP and geolocation data.
