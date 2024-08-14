@@ -1,0 +1,51 @@
+/* Light Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#device-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#device-details-list {
+    list-style: none;
+    padding: 0;
+}
+
+#device-details-list li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
